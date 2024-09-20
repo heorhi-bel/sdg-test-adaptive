@@ -19,6 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://heorhi-bel.github.io/sdg-test-adaptive",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -6,7 +6,7 @@ import AboutPage from './pages/about/about';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sdg-test-adaptive">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
