@@ -1,17 +1,18 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ModalProvider, useModal } from './shared/common/modal/Modal';
 import HomePage from './pages/home/home';
-import AboutPage from './pages/about/about';
 
 
 function App() {
   return (
-    <Router basename="/sdg-test-adaptive">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </Router>
+    <ModalProvider>
+      <Router basename="/sdg-test-adaptive">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
+  </ModalProvider>
   );
 }
 

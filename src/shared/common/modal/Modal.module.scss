@@ -1,0 +1,48 @@
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    z-index: 1000;
+
+    .modal {
+        border-radius: 50px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        padding: 46px 80px 150px;
+        max-width: 1270px;
+
+        @media (max-width: 720px) {
+            padding: 30px 15px 72px;
+
+        }
+    }
+}
+
+
+.closeButton {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+  
+.closeIcon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    fill: linear-gradient(145deg, #e51726 12.35%, #d4208c 83.63%);
+}

@@ -1,0 +1,26 @@
+.stepItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+  
+  .stepNumber {
+    font-size: 33px;
+    font-weight: 800;
+    letter-spacing: -1.65px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .stepContent {
+    color: #3a3a3a;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: -0.94px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
