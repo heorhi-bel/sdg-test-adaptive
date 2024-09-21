@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 import styles from './Modal.module.scss'
 import exitImg from "../../../assets/images/exit.png"
 
@@ -16,6 +16,22 @@ export const ModalProvider = ({ children }) => {
   const closeModal = () => {
     setModalContent(null);
   };
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    if (modalContent) {
+      window.addEventListener('keydown', handleEsc);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, [modalContent]);
 
   return (
     <ModalContext.Provider value={{ openModal, closeModal }}>
