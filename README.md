@@ -1,5 +1,6 @@
 # Getting Started by the link  
-  https://heorhi-bel.github.io/sdg-test-adaptive/
+  Just click without any manipulation
+  link: **https://heorhi-bel.github.io/sdg-test-adaptive/**
 ### Report:  
 - The page must be implemented according to the design layout  
   [Figma link](https://www.figma.com/file/OFhxh3RHOPL7tvxCpITcmj/UX-5285?node-id=0%3A1) -- **Done** √√√  
