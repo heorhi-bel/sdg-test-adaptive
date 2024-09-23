@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Getting Started by the link  
+  https://heorhi-bel.github.io/sdg-test-adaptive/
+# Report:
+• The page must be implemented according to the design layout
+https://www.figma.com/file/OFhxh3RHOPL7tvxCpITcmj/UX-5285?node-id=0%3A1 -- Done√
+• The layout must be responsive. -- Responsive and adaptive implemented√
+• On clicking the SIGN UP button, a modal with a registration form should open. Done√
+• The close button (X) should close the modal. The same behavior should occur when pressing Esc with the modal open. -- Done√
+• The form submission should register the user with a PUT request to the endpoint https://api.dating.com/identity with the body. -- Done√
+• After successful registration, the Thank You message from the design should be displayed. -- Done√
+• LESS/SASS preprocessors can be used for styling. -- Done√
+• TypeScript can be used. -- Not used
+• Push the code to a public Git repository. -- Done√
+• If a server build and launch are required to open the page, instructions should be in the root of the repository in the README.md file. -- Not required√
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Additional:
+● Add validation for email and password fields. The password should be at least 8 characters long, and display errors under the fields. -- Done√
+● Before the registration request, attempt to authenticate with a GET request to https://api.dating.com/identity using Basic Auth. -- Done√
+● Immediately after successful registration/authentication, redirect the user to the authenticated area at https://www.dating.com/people/#token={TOKEN}, where {TOKEN} is the authorization token returned in the X-Token header of successful requests to https://api.dating.com/identity. -- Done√
+● Save the authorization token on the client and implement automatic redirection to the authenticated area using the token upon page load. -- Done√
+● Optimize images. -- Done with a compressor, optimized by more than 5x √
+● Minify the code served to the client. -- Done using Webpack√
