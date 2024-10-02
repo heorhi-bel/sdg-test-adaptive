@@ -1,5 +1,4 @@
-# Прочитай 
-  Дай шанс, у меня нет времени переделывать верстку. Я использовал плагин для создания оной в тот раз, но сейчас что-то исправлять нет просто времени.
+# Readme 
   Just click without any manipulation
   link: **https://heorhi-bel.github.io/sdg-test-adaptive/**
 ### Report:  
